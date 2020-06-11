@@ -1,0 +1,6 @@
+#! /bin/sh -e
+
+# install the omada controller software and remove the deb file afterward
+apt -y install /omada_v3.2.10*.deb
+rm /omada*.deb
+

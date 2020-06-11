@@ -1,0 +1,16 @@
+[Distribution]
+Distribution=debian
+Release=stretch
+
+[Output]
+Output=omada.raw
+
+[Partitions]
+# MongoDB wants at least around 3GB of free space for its journal or it will
+# refuse to start
+RootSize=5G
+
+[Packages]
+# apt needs network access to install dependencies in mkosi.postinst
+WithNetwork=true
+
