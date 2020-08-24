@@ -2,4 +2,6 @@
 /*.raw.cache-pre-dev
 /*.raw.cache-pre-inst
 /omada.nspawn
-/mkosi.cache/
+
+/mkosi.cache/*
+!/mkosi.cache/CACHEDIR.TAG
