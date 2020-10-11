@@ -1,5 +1,14 @@
 #! /bin/sh -e
 
+# allow login via `machinectl shell ...`
+# see: https://github.com/systemd/systemd/issues/852
+echo '' >> /etc/securetty
+echo '# Logins via `machinectl shell ...` on host machine' >> /etc/securetty
+for i in `seq 10`
+do
+    echo "pts/$i" >> /etc/securetty
+done
+
 # install the omada controller software and remove the deb file afterward
 apt -y install /omada_v3.2.10*.deb
 rm /omada*.deb
