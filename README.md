@@ -58,3 +58,9 @@ version 1.2.3. The revision level is reset to 1 each time the packaged Omada
 Controller version is updated in this project. See the debain version pollicy
 for further info (try `man deb-version` on debian based distros).
 
+# Upgrading from a Previous Version #
+
+If upgrading from a previous version of the controller, TP-Link has an [Upgrade
+Guide] which you should read first.
+
+[Upgrade Guide]: https://www.tp-link.com/omada-sdn/controller-upgrade/
