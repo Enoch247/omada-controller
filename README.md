@@ -49,3 +49,12 @@ $ machinectl enable omada
 $ machinectl start omada
 ```
 
+# Version Numbering #
+
+This project aims to follow the debian package numbering policy. This means
+that tags follow the form UpstreamVersionNumber-PackageRevision. So a tag of
+1.2.3-4 would be the 4th revision of this project containing Omada Controller
+version 1.2.3. The revision level is reset to 1 each time the packaged Omada
+Controller version is updated in this project. See the debain version pollicy
+for further info (try `man deb-version` on debian based distros).
+
