@@ -15,6 +15,6 @@ done
 mkdir /usr/share/man/man1
 
 # install the omada controller software and remove the deb file afterward
-apt -y install /omada_v3.2.10*.deb
+apt -y install /omada*.deb
 rm /omada*.deb
 
