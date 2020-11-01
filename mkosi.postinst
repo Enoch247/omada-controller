@@ -9,6 +9,11 @@ do
     echo "pts/$i" >> /etc/securetty
 done
 
+# One of the Debain packages reqiured by the Omada Controller apparently
+# assumes the following folder will be present when it is installed, but it is
+# not. So we will create it for the package.
+mkdir /usr/share/man/man1
+
 # install the omada controller software and remove the deb file afterward
 apt -y install /omada_v3.2.10*.deb
 rm /omada*.deb
