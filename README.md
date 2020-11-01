@@ -49,6 +49,11 @@ $ machinectl enable omada
 $ machinectl start omada
 ```
 
+## Known Limitations ##
+
+For some reason `machinectl shell omada` doesn't seem to work with Debain 9 (used for the container's OS).
+However, as a work around, `machinectl shell omada /bin/bash` does work.
+
 # Version Numbering #
 
 This project aims to follow the debian package numbering policy. This means
