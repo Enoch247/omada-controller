@@ -14,7 +14,7 @@ done
 # not. So we will create it for the package.
 mkdir -p /usr/share/man/man1
 
-# install the omada controller software and remove the deb file afterward
-apt -y install /omada*.deb
-rm /omada*.deb
-
+# download and install the omada controller software
+curl https://static.tp-link.com/software/2021/202107/20210701/Omada_SDN_Controller_v4.4.3_linux_x64.deb -o /tmp/omada.deb
+md5sum -c /checksum.md5sum
+apt -y install /tmp/omada.deb

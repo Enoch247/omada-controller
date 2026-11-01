@@ -14,3 +14,7 @@ RootSize=5G
 # apt needs network access to install dependencies in mkosi.postinst
 WithNetwork=true
 
+# needed to download the omada deb pkg in the post install script
+Packages=
+    ca-certificates
+    curl
